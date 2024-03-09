@@ -29,7 +29,6 @@ export default async function Home({ params }: Params) {
   async function getWeather(cityName: string): Promise<WeatherData> {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
     return data;
   }
   const weather = await getWeather(params.cityName);

@@ -30,7 +30,6 @@ const Search = (props: SearchProps) => {
         errorMessage={isInvalid && "Please enter a valid City name"}
         className="w-[60%] max-w-xs"
       />
-      <p>{value}</p>
     </>
   );
 };
