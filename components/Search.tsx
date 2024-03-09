@@ -28,7 +28,7 @@ const Search = (props: SearchProps) => {
         value={value}
         onValueChange={setValue}
         errorMessage={isInvalid && "Please enter a valid City name"}
-        className="w-[60%]"
+        className="w-[60%] max-w-xs"
       />
       <p>{value}</p>
     </>

@@ -26,7 +26,7 @@ export default function WeatherCard({
   return (
     <Card
       isBlurred
-      className="border-none bg-background/60 dark:bg-default-100/50 w-[70%] p-5 m-5 flex justify-center items-center"
+      className="border-none bg-background/60 dark:bg-default-100/50 w-[70%] max-w-xs p-5 m-5 flex justify-center items-center"
       shadow="sm"
     >
       <CardBody>
