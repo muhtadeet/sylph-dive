@@ -3,15 +3,14 @@ import { Card, CardBody, CardFooter, Slider } from "@nextui-org/react";
 import Image from "next/image";
 
 interface CardProps {
-  name?: string;
-  status?: string;
-  temp?: string;
-  tempMin?: string;
-  tempMax?: string;
-  pressure?: number;
-  humidity?: number;
-  feelsLike?: string;
-  wind?: number;
+  name: string;
+  status: string;
+  temp: string;
+  tempMin: string;
+  tempMax: string;
+  humidity: number;
+  feelsLike: string;
+  wind: number;
 }
 
 export default function WeatherCard({
@@ -20,7 +19,6 @@ export default function WeatherCard({
   temp,
   tempMin,
   tempMax,
-  pressure,
   humidity,
   feelsLike,
   wind,
