@@ -6,11 +6,11 @@ interface CardProps {
   name?: string;
   status?: string;
   temp?: string;
-  tempMin?: number;
-  tempMax?: number;
+  tempMin?: string;
+  tempMax?: string;
   pressure?: number;
   humidity?: number;
-  feelsLike?: number;
+  feelsLike?: string;
   wind?: number;
 }
 

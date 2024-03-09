@@ -7,10 +7,10 @@ interface WeatherData {
   }];
   main: {
     temp: number;
-    temp_min: string;
-    temp_max: string;
+    temp_min: number;
+    temp_max: number;
     humidity: number;
-    feels_like: string;
+    feels_like: number;
   };
   wind: {
     speed: number;
