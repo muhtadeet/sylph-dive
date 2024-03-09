@@ -2,9 +2,11 @@ import Card from "../components/Card";
 import Search from "@/components/Search";
 
 interface WeatherData {
-  weather: [{
-    main: string;
-  }];
+  weather: [
+    {
+      main: string;
+    }
+  ];
   main: {
     temp: number;
     temp_min: number;
@@ -36,16 +38,18 @@ export default async function Home({ params }: Params) {
     <>
       <div className="flex flex-col justify-center items-center bg-gradient-to-bl from-purple-300 from-40% via-purple-200 to-purple-50 h-screen w-full">
         <Search />
-        <Card
-          name={weather.name}
-          temp={weather?.main?.temp.toFixed(0)}
-          status={weather.weather[0].main}
-          tempMax={weather.main.temp_max.toFixed(0)}
-          tempMin={weather.main.temp_min.toFixed(0)}
-          feelsLike={weather.main.feels_like.toFixed(0)}
-          wind={weather.wind.speed}
-          humidity={weather.main.humidity}
-        ></Card>
+        {weather && (
+          <Card
+            name={weather.name}
+            temp={weather?.main?.temp.toFixed(0)}
+            status={weather.weather[0].main}
+            tempMax={weather.main.temp_max.toFixed(0)}
+            tempMin={weather.main.temp_min.toFixed(0)}
+            feelsLike={weather.main.feels_like.toFixed(0)}
+            wind={weather.wind.speed}
+            humidity={weather.main.humidity}
+          ></Card>
+        )}
       </div>
     </>
   );
