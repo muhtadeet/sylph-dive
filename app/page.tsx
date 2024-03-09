@@ -38,7 +38,7 @@ export default async function Home({ params }: Params) {
         <Search />
         <Card
           name={weather.name}
-          temp={weather.main.temp.toFixed(0)}
+          temp={weather?.main?.temp.toFixed(0)}
           status={weather.weather[0].main}
           tempMax={weather.main.temp_max.toFixed(0)}
           tempMin={weather.main.temp_min.toFixed(0)}
