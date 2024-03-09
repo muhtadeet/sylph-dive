@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
-import { ThemeProvider } from "./theme-provider";
+import { Providers } from "../components/providers";
+import { ThemeProvider } from "../components/theme-provider";
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "900"] });
 
