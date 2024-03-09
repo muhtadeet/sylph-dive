@@ -2,9 +2,9 @@ import Card from "../components/Card";
 import Search from "@/components/Search";
 
 interface WeatherData {
-  weather: {
+  weather: [{
     main: string;
-  };
+  }];
   main: {
     temp: number;
     temp_min: string;
